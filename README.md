@@ -104,46 +104,41 @@ start index.html   # Windows
 # or simply drag index.html into your browser
 ## 🎯 Interview / Portfolio Talking Points
 
-- “I built a **client-side GA4-style analytics engine** that mirrors enterprise tracking logic.”
-- “The dashboard revealed a **45% cart-to-checkout drop-off** — a ~$15k monthly revenue leak.”
-- “Recommended UX fixes are projected to lift conversion **18–22%** based on historical benchmarks.”
-- “All processing happens in-browser with **unique user funnel logic** — no server-side aggregation.”
+🎯 Interview / Portfolio Talking Points
 
-## 📈 Business Value Summary
+“I built a client-side GA4-style analytics engine that mirrors enterprise tracking logic.”
+“The dashboard revealed a 45% cart-to-checkout drop-off — a ~$15k monthly revenue leak.”
+“Recommended UX fixes are projected to lift conversion 18–22% based on historical benchmarks.”
+“All processing happens in-browser with unique user funnel logic — no server-side aggregation.”
 
+📈 Business Value Summary
 This project showcases skills directly relevant to:
 
-- UX Data Analyst
-- Conversion Rate Optimization (CRO) Specialist
-- Product / E-commerce Analyst
-- Growth Analyst
-- Shopify / DTC Analytics roles
+UX Data Analyst
+Conversion Rate Optimization (CRO) Specialist
+Product / E-commerce Analyst
+Growth Analyst
+Shopify / DTC Analytics roles
 
-## 🔮 Future Enhancements (roadmap)
+🔮 Future Enhancements (roadmap)
 
-- [ ] React / TypeScript refactor
-- [ ] Larger synthetic datasets (10k–100k events)
-- [ ] Proper p-value & chi-square significance tests
-- [ ] Multi-variant & multivariate testing
-- [ ] Time-series trends & anomaly detection
-- [ ] Exportable PDF / CSV reports
+ React / TypeScript refactor
+ Larger synthetic datasets (10k–100k events)
+ Proper p-value & chi-square significance tests
+ Multi-variant & multivariate testing
+ Time-series trends & anomaly detection
+ Exportable PDF / CSV reports
 
-## 👤 Author
-
-**Mwanza Wambua**  
-UX Data Analyst • CRO Specialist • Analytics Engineer  
-
+👤 Author
+Mwanza Wambua
+UX Data Analyst • CRO Specialist • Analytics Engineer
 Portfolio built to reflect real day-to-day work at Shopify Plus agencies, DTC brands, and conversion-focused design studios.
-
 Feel free to fork, adapt and use — attribution appreciated 🙏
 
----
-
-⭐ Star this repo if you find it useful!  
+⭐ Star this repo if you find it useful!
 🐛 Issues & PRs welcome.
-
-
-You can copy everything inside the code block above and paste it directly into your `README.md` file.  
+textYou can copy everything inside the code block above and paste it directly into your `README.md` file.  
 This version includes all the sections you requested, with consistent formatting.  
 
-Replace placeholders like `YOUR-USERNAME` and update the screenshot URL with a real dashboard image when you have one. Let me know if you'd like any final tweaks!
+Replace placeholders like `YOUR-USERNAME` and update the screenshot URL with a real dashboard imag
+
