@@ -2,48 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>UX Analytics Case Study | Mwanza Wambua</title>
+  <title>UX Analytics & CRO Portfolio | Mwanza Wambua</title>
+  <meta name="description" content="GA4-style UX analytics, funnel analysis, CRO insights, and A/B testing portfolio">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>UX Analytics & CRO Case Study</h1>
-  <p>How data-driven UX insights improve e-commerce conversion</p>
+<header class="page-header">
+  <h1>UX Analytics & CRO Portfolio</h1>
+  <p class="subtitle">
+    GA4-style event tracking • Funnel analysis • CRO experimentation • Revenue impact
+  </p>
 </header>
 
-<section>
-  <h2>1. Funnel Overview</h2>
+<section class="context">
+  <h2>Business Context</h2>
+  <p>
+    This case study analyzes real-world e-commerce event data to understand how users
+    move through the checkout funnel, where friction occurs, and how UX improvements
+    can increase conversion and revenue.
+  </p>
+</section>
+
+<section class="dashboard">
+  <h2>Checkout Funnel Performance</h2>
+  <p class="section-desc">
+    Unique users per funnel step, calculated using GA4-style event logic.
+  </p>
   <canvas id="funnelChart"></canvas>
 </section>
 
-<section>
-  <h2>2. Funnel Drop-off Analysis</h2>
-  <div id="dropoff"></div>
+<section class="dashboard">
+  <h2>Drop-off & Abandonment Analysis</h2>
+  <div id="dropoff" class="metrics-box">
+    <!-- JS injects drop-off metrics here -->
+  </div>
 </section>
 
-<section>
-  <h2>3. Conversion by Device</h2>
-  <canvas id="deviceChart"></canvas>
+<section class="dashboard">
+  <h2>A/B Test Performance</h2>
+  <p class="section-desc">
+    Comparison of checkout UX variants based on purchases and revenue.
+  </p>
+  <div id="abtest" class="metrics-box">
+    <!-- JS injects A/B test results here -->
+  </div>
 </section>
 
-<section>
-  <h2>4. A/B Test Performance</h2>
-  <div id="abTest"></div>
+<section class="dashboard">
+  <h2>User Retention & Cohort Insight</h2>
+  <p class="section-desc">
+    Repeat purchase behavior derived from event-level user data.
+  </p>
+  <div id="cohort" class="metrics-box">
+    <!-- JS injects retention metrics here -->
+  </div>
 </section>
 
-<section>
-  <h2>5. UX & CRO Recommendations</h2>
+<section class="recommendations">
+  <h2>UX & CRO Recommendations</h2>
   <ul>
-    <li>Simplify cart UX for mobile users to reduce abandonment</li>
-    <li>Improve product page clarity and CTA visibility</li>
-    <li>Prioritize Variant B design across checkout</li>
-    <li>Introduce progress indicators in checkout flow</li>
+    <li>Simplify payment step to reduce highest observed funnel drop-off</li>
+    <li>Roll out higher-performing Variant B across checkout</li>
+    <li>Optimize mobile checkout with autofill and reduced form fields</li>
+    <li>Introduce progress indicators to set user expectations</li>
   </ul>
 </section>
 
-<footer>
-  <p>© Mwanza Wambua | UX Data Analyst</p>
+<footer class="page-footer">
+  <p>© Mwanza Wambua — UX Data Analyst | CRO | E-commerce Analytics</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
