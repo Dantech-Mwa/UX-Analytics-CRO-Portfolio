@@ -1,20 +1,27 @@
 # UX Analytics & CRO Portfolio – Mwanza Wambua
 
-## Case Study: Improving E-commerce Conversion Through UX Analytics
+## Overview
+This portfolio demonstrates GA4-style UX analytics applied to an e-commerce checkout funnel.
+It focuses on event accuracy, funnel progression, drop-off diagnostics, A/B testing, and
+revenue-driven UX recommendations.
 
-This project analyzes real e-commerce event data to identify funnel drop-offs, evaluate UX friction points, and propose CRO-driven improvements.
-
-### Business Goal
-Increase checkout completion and revenue by identifying UX barriers in the funnel.
-
-### Key Analyses
-- Full funnel visualization
-- Drop-off & abandonment analysis
-- Device-based UX comparison
+## Key Capabilities Demonstrated
+- Event-level UX analytics (GA4-style)
+- Funnel & abandonment analysis
 - A/B testing evaluation
-- Revenue impact assessment
+- Revenue & conversion impact
+- Cohort-style retention logic
+- UX storytelling for stakeholders
 
-### Tools & Methods
-GA4-style event tracking • Funnel analysis • CRO heuristics • UX metrics
+## Tech Stack
+HTML • CSS • JavaScript • Chart.js  
+Static deployment via GitHub Pages
 
-Author: Mwanza Wambua
+## How to Run
+1. Clone repository
+2. Open `index.html` in browser
+3. Or deploy using GitHub Pages
+
+## Author
+Mwanza Wambua  
+UX Data Analyst | CRO | E-commerce Analytics
