@@ -1,79 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>UX Analytics & CRO Portfolio | Mwanza Wambua</title>
-  <meta name="description" content="GA4-style UX analytics, funnel analysis, CRO insights, and A/B testing portfolio">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwanza Wambua | UX Analytics & CRO Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="portfolio-header">
+            <div class="header-content">
+                <h1>Mwanza Wambua</h1>
+                <h2>UX Analytics & Conversion Rate Optimization Portfolio</h2>
+                <p class="tagline">Data-Driven UX Decisions • GA4/Shopify Analytics • E-commerce Optimization</p>
+                <div class="contact-info">
+                    <span><i class="fas fa-envelope"></i> portfolio@mwanza-wambua.com</span>
+                    <span><i class="fas fa-link"></i> mwanza-wambua.github.io/analytics-portfolio</span>
+                </div>
+            </div>
+            <div class="header-badge">
+                <span class="badge">Event-Based Analytics</span>
+                <span class="badge">GA4/Shopify Expert</span>
+                <span class="badge">CRO Specialist</span>
+            </div>
+        </header>
 
-<header class="page-header">
-  <h1>UX Analytics & CRO Portfolio</h1>
-  <p class="subtitle">
-    GA4-style event tracking • Funnel analysis • CRO experimentation • Revenue impact
-  </p>
-</header>
+        <!-- Executive Summary -->
+        <section class="executive-summary">
+            <h3><i class="fas fa-chart-line"></i> Executive Summary</h3>
+            <div class="summary-content">
+                <p>This portfolio demonstrates <strong>real-world UX analytics capabilities</strong> through a fully functional e-commerce analytics dashboard. It simulates GA4/Shopify event data processing, funnel analysis, A/B testing evaluation, and retention metrics to showcase data-driven UX decision-making.</p>
+                <div class="summary-stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalRevenue">$0</div>
+                        <div class="stat-label">Total Revenue</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalUsers">0</div>
+                        <div class="stat-label">Unique Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="conversionRate">0%</div>
+                        <div class="stat-label">Overall Conversion</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="context">
-  <h2>Business Context</h2>
-  <p>
-    This case study analyzes real-world e-commerce event data to understand how users
-    move through the checkout funnel, where friction occurs, and how UX improvements
-    can increase conversion and revenue.
-  </p>
-</section>
+        <!-- Main Dashboard -->
+        <div class="dashboard">
+            <!-- Left Column -->
+            <div class="dashboard-left">
+                <!-- Funnel Analysis Section -->
+                <section class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-filter"></i> Funnel Analysis & Drop-off Diagnostics</h3>
+                        <p class="card-subtitle">Product View → Add to Cart → Checkout → Purchase</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="chart-container">
+                            <canvas id="funnelChart"></canvas>
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <div class="metric-value" id="funnelProductViews">0</div>
+                                <div class="metric-label">Product Views</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value" id="funnelAddToCart">0</div>
+                                <div class="metric-label">Add to Cart</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value" id="funnelCheckout">0</div>
+                                <div class="metric-label">Checkout Started</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value" id="funnelPurchases">0</div>
+                                <div class="metric-label">Purchases</div>
+                            </div>
+                        </div>
+                        <div class="dropoff-analysis">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Critical Drop-off Points</h4>
+                            <div id="dropoffInsights">Loading drop-off analysis...</div>
+                        </div>
+                    </div>
+                </section>
 
-<section class="dashboard">
-  <h2>Checkout Funnel Performance</h2>
-  <p class="section-desc">
-    Unique users per funnel step, calculated using GA4-style event logic.
-  </p>
-  <canvas id="funnelChart"></canvas>
-</section>
+                <!-- A/B Testing Section -->
+                <section class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-vial"></i> A/B Testing Evaluation</h3>
+                        <p class="card-subtitle">Variant A vs Variant B - Purchase Behavior Comparison</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="abtest-container">
+                            <div class="abtest-variant">
+                                <div class="variant-header variant-a">
+                                    <h4>Variant A</h4>
+                                    <span class="variant-badge">Control</span>
+                                </div>
+                                <div class="variant-metrics">
+                                    <div class="variant-metric">
+                                        <div class="metric-value" id="variantAUsers">0</div>
+                                        <div class="metric-label">Users</div>
+                                    </div>
+                                    <div class="variant-metric">
+                                        <div class="metric-value" id="variantAPurchases">0</div>
+                                        <div class="metric-label">Purchases</div>
+                                    </div>
+                                    <div class="variant-metric">
+                                        <div class="metric-value" id="variantAConversion">0%</div>
+                                        <div class="metric-label">Conversion</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="abtest-variant">
+                                <div class="variant-header variant-b">
+                                    <h4>Variant B</h4>
+                                    <span class="variant-badge">Test</span>
+                                </div>
+                                <div class="variant-metrics">
+                                    <div class="variant-metric">
+                                        <div class="metric-value" id="variantBUsers">0</div>
+                                        <div class="metric-label">Users</div>
+                                    </div>
+                                    <div class="variant-metric">
+                                        <div class="metric-value" id="variantBPurchases">0</div>
+                                        <div class="metric-label">Purchases</div>
+                                    </div>
+                                    <div class="variant-metric">
+                                        <div class="metric-value" id="variantBConversion">0%</div>
+                                        <div class="metric-label">Conversion</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="abtest-result" id="abtestResult">
+                            <div class="result-header">
+                                <h4><i class="fas fa-chart-bar"></i> Test Result</h4>
+                            </div>
+                            <div id="abtestInsights">Calculating test results...</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-<section class="dashboard">
-  <h2>Drop-off & Abandonment Analysis</h2>
-  <div id="dropoff" class="metrics-box">
-    <!-- JS injects drop-off metrics here -->
-  </div>
-</section>
+            <!-- Right Column -->
+            <div class="dashboard-right">
+                <!-- Cohort Retention -->
+                <section class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-users"></i> Cohort Retention Analysis</h3>
+                        <p class="card-subtitle">Repeat Purchase Behavior & Customer Loyalty</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="cohort-metrics">
+                            <div class="cohort-metric">
+                                <div class="metric-value" id="repeatCustomers">0</div>
+                                <div class="metric-label">Repeat Customers</div>
+                            </div>
+                            <div class="cohort-metric">
+                                <div class="metric-value" id="retentionRate">0%</div>
+                                <div class="metric-label">Retention Rate</div>
+                            </div>
+                            <div class="cohort-metric">
+                                <div class="metric-value" id="avgRepeatPurchases">0.0</div>
+                                <div class="metric-label">Avg Repeat Purchases</div>
+                            </div>
+                        </div>
+                        <div class="cohort-insights">
+                            <h4><i class="fas fa-lightbulb"></i> Retention Insights</h4>
+                            <div id="cohortInsights">Analyzing customer retention patterns...</div>
+                        </div>
+                    </div>
+                </section>
 
-<section class="dashboard">
-  <h2>A/B Test Performance</h2>
-  <p class="section-desc">
-    Comparison of checkout UX variants based on purchases and revenue.
-  </p>
-  <div id="abtest" class="metrics-box">
-    <!-- JS injects A/B test results here -->
-  </div>
-</section>
+                <!-- Device & Traffic Analysis -->
+                <section class="dashboard-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-mobile-alt"></i> Device & Traffic Analysis</h3>
+                        <p class="card-subtitle">Performance by Device Type & Traffic Source</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="analysis-container">
+                            <div class="analysis-chart">
+                                <canvas id="deviceChart"></canvas>
+                            </div>
+                            <div class="traffic-breakdown">
+                                <h4>Conversion by Traffic Source</h4>
+                                <div id="trafficInsights">Loading traffic analysis...</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-<section class="dashboard">
-  <h2>User Retention & Cohort Insight</h2>
-  <p class="section-desc">
-    Repeat purchase behavior derived from event-level user data.
-  </p>
-  <div id="cohort" class="metrics-box">
-    <!-- JS injects retention metrics here -->
-  </div>
-</section>
+                <!-- UX Recommendations -->
+                <section class="dashboard-card recommendations">
+                    <div class="card-header">
+                        <h3><i class="fas fa-bullseye"></i> Data-Driven UX Recommendations</h3>
+                        <p class="card-subtitle">Actionable insights based on analytics</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="recommendations-list" id="recommendationsList">
+                            <div class="recommendation">
+                                <div class="rec-icon"><i class="fas fa-shopping-cart"></i></div>
+                                <div class="rec-content">
+                                    <h4>Optimize Cart-to-Checkout Flow</h4>
+                                    <p>Address the 45% drop-off between cart addition and checkout initiation through simplified navigation and progress indicators.</p>
+                                    <span class="rec-impact">Impact: +15% conversion potential</span>
+                                </div>
+                            </div>
+                            <!-- More recommendations will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
 
-<section class="recommendations">
-  <h2>UX & CRO Recommendations</h2>
-  <ul>
-    <li>Simplify payment step to reduce highest observed funnel drop-off</li>
-    <li>Roll out higher-performing Variant B across checkout</li>
-    <li>Optimize mobile checkout with autofill and reduced form fields</li>
-    <li>Introduce progress indicators to set user expectations</li>
-  </ul>
-</section>
+        <!-- Methodology Section -->
+        <section class="methodology">
+            <h3><i class="fas fa-cogs"></i> Analytics Methodology</h3>
+            <div class="methodology-content">
+                <div class="methodology-point">
+                    <h4><i class="fas fa-database"></i> Event-Based Tracking (GA4 Model)</h4>
+                    <p>Simulates GA4 event schema with user-level tracking for accurate funnel analysis and attribution.</p>
+                </div>
+                <div class="methodology-point">
+                    <h4><i class="fas fa-project-diagram"></i> Funnel Progression Logic</h4>
+                    <p>Unique user counting per step to prevent double-counting, matching enterprise analytics platforms.</p>
+                </div>
+                <div class="methodology-point">
+                    <h4><i class="fas fa-balance-scale"></i> Statistical Significance</h4>
+                    <p>A/B test evaluation with conversion rate comparison and confidence interval estimation.</p>
+                </div>
+                <div class="methodology-point">
+                    <h4><i class="fas fa-user-clock"></i> Cohort Analysis</h4>
+                    <p>Repeat customer identification and retention rate calculation for loyalty insights.</p>
+                </div>
+            </div>
+        </section>
 
-<footer class="page-footer">
-  <p>© Mwanza Wambua — UX Data Analyst | CRO | E-commerce Analytics</p>
-</footer>
+        <!-- Footer -->
+        <footer class="portfolio-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Portfolio Capabilities Demonstrated</h4>
+                    <ul>
+                        <li>GA4/Shopify Analytics Implementation</li>
+                        <li>Funnel & Drop-off Analysis</li>
+                        <li>A/B Testing & Experimentation</li>
+                        <li>Revenue Attribution Modeling</li>
+                        <li>UX Storytelling & Stakeholder Communication</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technical Stack</h4>
+                    <div class="tech-stack">
+                        <span class="tech">HTML/CSS/JavaScript</span>
+                        <span class="tech">Chart.js Visualization</span>
+                        <span class="tech">CSV Data Processing</span>
+                        <span class="tech">Event-Based Analytics</span>
+                        <span class="tech">Modular Architecture</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Author</h4>
+                    <p><strong>Mwanza Wambua</strong></p>
+                    <p>UX Data Analyst & CRO Specialist</p>
+                    <p>Portfolio designed for e-commerce analytics roles</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Mwanza Wambua | UX Analytics & CRO Portfolio | Built with enterprise analytics principles</p>
+            </div>
+        </footer>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
